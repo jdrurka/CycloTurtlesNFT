@@ -307,7 +307,7 @@ contract CycloTurtles is ERC721, Ownable {
 
     function presaleMint (uint256 _amount) external payable {
         require(
-            presaleConfig.isActive = true,
+            presaleConfig.isActive == true,
             "CycloTutrles: Sale must be active to mint"
         );
         require(
